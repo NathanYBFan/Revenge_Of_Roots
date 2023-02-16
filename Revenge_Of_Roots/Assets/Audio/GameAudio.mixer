@@ -29,7 +29,7 @@ AudioMixerGroupController:
   m_Send: 00000000000000000000000000000000
   m_Effects:
   - {fileID: 8478009795702464871}
-  m_UserColorIndex: 0
+  m_UserColorIndex: 1
   m_Mute: 0
   m_Solo: 0
   m_BypassEffects: 0
@@ -63,12 +63,16 @@ AudioMixerController:
   m_EnableSuspend: 1
   m_UpdateMode: 0
   m_ExposedParameters:
-  - guid: 119395853953ff44e929c4e8b4929b9c
-    name: Ambience
+  - guid: a2fdffd0540a3014c882f3ddbc2c9c97
+    name: Enemy
   - guid: 31f701b77093ab44a9f158c9133d1496
     name: Master
   - guid: 879a1bb94e6c3634daec1aabd7792ff7
     name: Music
+  - guid: 119395853953ff44e929c4e8b4929b9c
+    name: Player
+  - guid: 9cc12b7e22cd682488283f87225a1082
+    name: System
   m_AudioMixerGroupViews:
   - guids:
     - c0c3029959ed6b642bb55d74f0cd7c42
@@ -98,7 +102,7 @@ AudioMixerGroupController:
   m_Send: 00000000000000000000000000000000
   m_Effects:
   - {fileID: 24400004}
-  m_UserColorIndex: 0
+  m_UserColorIndex: 6
   m_Mute: 0
   m_Solo: 0
   m_BypassEffects: 0
@@ -142,7 +146,7 @@ AudioMixerGroupController:
   m_Send: 00000000000000000000000000000000
   m_Effects:
   - {fileID: 5775576697179621915}
-  m_UserColorIndex: 0
+  m_UserColorIndex: 2
   m_Mute: 0
   m_Solo: 0
   m_BypassEffects: 0
@@ -161,7 +165,7 @@ AudioMixerGroupController:
   m_Send: 00000000000000000000000000000000
   m_Effects:
   - {fileID: -7599535480123040732}
-  m_UserColorIndex: 0
+  m_UserColorIndex: 2
   m_Mute: 0
   m_Solo: 0
   m_BypassEffects: 0
@@ -194,7 +198,7 @@ AudioMixerGroupController:
   m_Send: 00000000000000000000000000000000
   m_Effects:
   - {fileID: -6372757805966754505}
-  m_UserColorIndex: 0
+  m_UserColorIndex: 1
   m_Mute: 0
   m_Solo: 0
   m_BypassEffects: 0
