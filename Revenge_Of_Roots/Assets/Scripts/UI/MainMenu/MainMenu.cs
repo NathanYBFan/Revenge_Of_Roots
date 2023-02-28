@@ -2,18 +2,9 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
-    [Header("UI Initializations")]
-    [SerializeField] private string settingsMenuSceneName;
-    [SerializeField] private string stageSelectSceneName;
-
-    public void SceneLoadPlayGame()
+    public void SceneLoadAdditive(string sceneName)
     {
-        SceneManager.LoadScene(stageSelectSceneName, LoadSceneMode.Single);
-    }
-
-    public void SceneLoadSettingsMenu()
-    {
-        SceneManager.LoadSceneAsync(settingsMenuSceneName, LoadSceneMode.Additive);
+        SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Additive);
     }
 
     public void QuitGame()
