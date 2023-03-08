@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
@@ -24,7 +22,7 @@ public class Biome : MonoBehaviour
     public Tile grass;        //The tile we want to autotile. For this instance, it's grass
     public Vector3Int gridBottomLeft;//The bottom left corner of the viewport, but mapped to the cell grid of the tilemap.
     public Vector3Int gridTopRight;//The top right corner of the viewport, but mapped to the cell grid of the tilemap.
-    public GameObject mask;   //Reference to a SpriteMask
+    //public GameObject mask;   //Reference to a SpriteMask
     public int seed;          //Seed value for "custom noise maps"
     public GameObject player; //Reference to the player
     public int noiseValue;    //The noise value (but mapped to a 0 - 255 range)
@@ -32,7 +30,7 @@ public class Biome : MonoBehaviour
     void Start()
     {
         size = Camera.main.ViewportToWorldPoint(new Vector3(1, 1, Camera.main.nearClipPlane)) - Camera.main.ViewportToWorldPoint(new Vector3(0, 0, Camera.main.nearClipPlane));
-        mask.transform.localScale = size;   
+        //mask.transform.localScale = size;   
         GenerateTerrain();
     }
 
@@ -67,11 +65,9 @@ public class Biome : MonoBehaviour
                 GetComponent<Tilemap>().SetTile(new Vector3Int(x, y, 0), grass);
 
                 //Calculate the noise colour value at this position.
-                CalcNoise(x, y);
+                //CalcNoise(x, y);
             }
         }
-
-       
     }
     void UnloadTiles()
     {

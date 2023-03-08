@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 197656688}
   - component: {fileID: 197656687}
   m_Layer: 5
-  m_Name: levelImage
+  m_Name: CharacterImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -257,9 +257,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Stage 1
-
-'
+  m_text: Char 1
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 80eef9beaba7df34eb27c1e46a86c487, type: 2}
   m_sharedMaterial: {fileID: 6698548212711290071, guid: 80eef9beaba7df34eb27c1e46a86c487, type: 2}
@@ -394,7 +392,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Level Select
+  m_text: Character Select
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -481,7 +479,7 @@ GameObject:
   m_Component:
   - component: {fileID: 824937845}
   m_Layer: 0
-  m_Name: Level1
+  m_Name: Character1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -590,8 +588,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1233674147}
-        m_TargetAssemblyTypeName: StageSelect, Assembly-CSharp
-        m_MethodName: BackButton
+        m_TargetAssemblyTypeName: CharacterSelect, Managers
+        m_MethodName: BackButtonPressed
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -788,7 +786,7 @@ GameObject:
   - component: {fileID: 1233674143}
   - component: {fileID: 1233674147}
   m_Layer: 5
-  m_Name: StageSelectCanvas
+  m_Name: CharacterSelectCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -887,10 +885,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1233674142}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06bc7f9c87294b74ab6dedd799b5b3bc, type: 3}
+  m_Script: {fileID: 11500000, guid: 88636913bd543c040972acc6fad315a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelSelectMenuSceneName: StageSelect
+  nameOfCurrentScene: 4-CharacterSelect
 --- !u!1 &1353576321
 GameObject:
   m_ObjectHideFlags: 0
@@ -1051,8 +1049,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1233674147}
-        m_TargetAssemblyTypeName: StageSelect, Assembly-CSharp
-        m_MethodName: LoadLevel
+        m_TargetAssemblyTypeName: CharacterSelect, Managers
+        m_MethodName: SingleSceneLoad
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1069,13 +1067,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1528592871}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1150,7 +1148,7 @@ GameObject:
   - component: {fileID: 1911467691}
   - component: {fileID: 1911467690}
   m_Layer: 5
-  m_Name: ButtonBG
+  m_Name: Buffer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

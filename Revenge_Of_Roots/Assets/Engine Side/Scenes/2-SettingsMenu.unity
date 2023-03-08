@@ -1449,7 +1449,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9de8e861311d2674bb042de83dce8e2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  settingsMenuSceneName: SettingsMenu
+  settingsMenuSceneName: 2-SettingsMenu
   videoControls: {fileID: 1401603310}
   videoButton: {fileID: 574196497}
   audioControls: {fileID: 87385635}
@@ -8568,9 +8568,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Play
-
-'
+  m_text: Back
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 80eef9beaba7df34eb27c1e46a86c487, type: 2}
   m_sharedMaterial: {fileID: 6698548212711290071, guid: 80eef9beaba7df34eb27c1e46a86c487, type: 2}
