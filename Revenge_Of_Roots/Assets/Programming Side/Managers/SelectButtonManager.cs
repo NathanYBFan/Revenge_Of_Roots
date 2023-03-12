@@ -1,13 +1,16 @@
 using UnityEngine;
 using UnityEngine.UI;
+using NaughtyAttributes;
 namespace ROR
 {
-    public class StageSelectButtonManager : MonoBehaviour
+    public class SelectButtonManager : MonoBehaviour
     {
         [SerializeField] private Outline[] buttonOutlineToggles;
+        [SerializeField, Required] private GameObject confirmButton;
 
         public void Awake() {
             disableAllOutlines();
+            DisableConfirmButton();
         }
 
         public void disableAllOutlines() {
@@ -20,5 +23,8 @@ namespace ROR
             disableAllOutlines();
             buttonOutlineToggles[buttonOutlineToToggle].enabled = true;
         }
+
+        public void DisableConfirmButton() { confirmButton.SetActive(false); }
+        public void EnableConfirmButton() { confirmButton.SetActive(true); }
     }
 }

@@ -9,6 +9,13 @@ namespace ROR.Player
         public static GameManager _gameManager { get; private set; }
         [SerializeField] public List<GameObject> players;
         [SerializeField, ReadOnly] private string levelSelected;
+        [SerializeField, ReadOnly] private BaseCharacter selectedCharacter = null; 
+        public BaseCharacter SelectedCharacter
+        {
+            get => selectedCharacter;
+            set { SelectedCharacter = value; }
+        }
+        
         private enum GAME_STATE 
         { 
             FreshLoad,
@@ -18,14 +25,6 @@ namespace ROR.Player
             Dead,
 
         }
-
-        [SerializeField, ReadOnly] private BaseCharacter selectedCharacter = null; 
-        public BaseCharacter SelectedCharacter
-        {
-            get => selectedCharacter;
-            set { SelectedCharacter = value; }
-        }
-
 
         // Start is called before the first frame update
         void Awake()
@@ -41,6 +40,7 @@ namespace ROR.Player
         }
 
         public void newLevelSelected (string selectedScene) { levelSelected = selectedScene; }
+        public void newCharacterSelected (BaseCharacter character) { selectedCharacter = character; }
         public string getLevelSelected () { return levelSelected; }
     }
 }

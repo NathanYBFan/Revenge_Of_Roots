@@ -1,14 +1,15 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using NaughtyAttributes;
 
 namespace ROR.Player
 {
     public class StageSelect : MonoBehaviour
     {
-        [SerializeField] private Outline[] buttonOutlineToggles;
         [SerializeField] private string levelSelectMenuSceneName;
-        public void Awake() { disableAllOutlines(); }
+        [SerializeField, Required] private SelectButtonManager selectButtonManager;
+        public void Awake() { selectButtonManager.disableAllOutlines(); }
         public void SingleLevelLoader(string levelToLoad) {
             SceneManager.LoadScene(levelToLoad, LoadSceneMode.Single);
         }
@@ -22,19 +23,10 @@ namespace ROR.Player
             SceneManager.UnloadSceneAsync(levelSelectMenuSceneName);
         }
 
-        public void disableAllOutlines() {
-            foreach (Outline o in buttonOutlineToggles)
-                o.enabled = false;
-        }
-
-        // 0 Baseds
-        public void enableOutline(int buttonOutlineToToggle) {
-            disableAllOutlines();
-            buttonOutlineToggles[buttonOutlineToToggle].enabled = true;
-        }
         public void LevelButtonSelected(string levelSelected) {
             GameManager._gameManager.newLevelSelected(levelSelected);
-            enableOutline(int.Parse(levelSelected.Substring(levelSelected.Length - 2)) - 1);
+            selectButtonManager.enableOutline(int.Parse(levelSelected.Substring(levelSelected.Length - 2)) - 1);
+            selectButtonManager.EnableConfirmButton();
         }
     }
 }
