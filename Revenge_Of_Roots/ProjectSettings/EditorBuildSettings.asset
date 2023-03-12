@@ -18,15 +18,12 @@ EditorBuildSettings:
     path: Assets/Engine Side/Scenes/UI/2-CharacterSelect.unity
     guid: 7251b80ca390b8c4a821177d89a443f5
   - enabled: 1
-    path: Assets/Engine Side/Scenes/Game Stages/Stage01.unity
+    path: Assets/Engine Side/Scenes/Game Stages/4-Stage01.unity
     guid: e6b2efcab38d8b2469d67e4fc88de669
   - enabled: 1
-    path: Assets/Engine Side/Scenes/Game Stages/Stage02.unity
+    path: Assets/Engine Side/Scenes/Game Stages/4-Stage02.unity
     guid: 80848caa9ce1770489b8bd9d92a171a7
   - enabled: 1
     path: Assets/Engine Side/Scenes/3-GameOver.unity
     guid: cb58173a7c0b7c14aaf9b163525753b5
-  - enabled: 1
-    path: Assets/Engine Side/Scenes/Test.unity
-    guid: 1cbcf2014e93cf74cadc684d3bc40468
   m_configObjects: {}
