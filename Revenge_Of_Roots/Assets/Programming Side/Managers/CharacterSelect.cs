@@ -7,12 +7,14 @@ public class CharacterSelect : MonoBehaviour
         [SerializeField] private string nameOfCurrentScene;
         [SerializeField] private SelectButtonManager selectButtonManager;
 
-        public void Awake() {
+        public void Start() {
             selectButtonManager.disableAllOutlines();
-            if (GameManager._gameManager.getCharacterSelected() != null)
+            if (GameManager._gameManager.getCharacterSelected() != null) {
                 selectButtonManager.EnableConfirmButton();
+                selectButtonManager.enableOutline(GameManager._gameManager.getCharacterSelected().CharacterID);
+            }
             else 
-                selectButtonManager.DisableConfirmButton();    
+                selectButtonManager.DisableConfirmButton();
         }
 
         public void SingleGameSceneLoad() {

@@ -9,12 +9,15 @@ namespace ROR.Player
     {
         [SerializeField] private string levelSelectMenuSceneName;
         [SerializeField, Required] private SelectButtonManager selectButtonManager;
-        public void Awake() {
+        public void Start() {
             selectButtonManager.disableAllOutlines();
-            if (GameManager._gameManager.getCharacterSelected() != null)
+            if (!(GameManager._gameManager.getLevelSelected().CompareTo("") == 0)) {
                 selectButtonManager.EnableConfirmButton();
+                selectButtonManager.enableOutline(int.Parse(GameManager._gameManager.getLevelSelected().Substring(GameManager._gameManager.getLevelSelected().Length - 2)) - 1);
+            }
             else 
-                selectButtonManager.DisableConfirmButton();    
+                selectButtonManager.DisableConfirmButton();
+            
         }
         public void SingleLevelLoader(string levelToLoad) {
             SceneManager.LoadScene(levelToLoad, LoadSceneMode.Single);
