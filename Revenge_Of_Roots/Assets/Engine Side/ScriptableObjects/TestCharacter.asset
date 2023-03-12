@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d92033705172a040ba1b449ce8f94ae, type: 3}
   m_Name: TestCharacter
   m_EditorClassIdentifier: 
-  characterName: Test01
+  characterID: 0
+  characterName: Bob
   characterSprite: {fileID: 0}
   moveSpeed: 5
+  characterHP: 100
   weaponPrefab: {fileID: 0}
   characterAnimator: {fileID: 0}

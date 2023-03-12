@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9d92033705172a040ba1b449ce8f94ae, type: 3}
-  m_Name: Character 2
+  m_Name: Character 1
   m_EditorClassIdentifier: 
-  characterID: 2
+  characterID: 1
   characterName: Test01
   characterSprite: {fileID: 21300000, guid: 4ffcc222f3045aa4999bcc6e29de8283, type: 3}
-  moveSpeed: 5
-  characterHP: 100
+  moveSpeed: 10
+  characterHP: 300
   weaponPrefab: {fileID: 1590678395481112561, guid: 04ad96a566ba4cd4396664efa47c3e13, type: 3}
   characterAnimator: {fileID: 9100000, guid: a75e0bfa06daf0a4aab6c283230f05c7, type: 2}

@@ -1,5 +1,54 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3694449618888112306
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7872762115027950702}
+  - component: {fileID: 5530253260199670057}
+  m_Layer: 0
+  m_Name: PlayerInitializer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7872762115027950702
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3694449618888112306}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5910807717127898883}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5530253260199670057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3694449618888112306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f91c0adeee46e70439a97e508874dacc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerImage: {fileID: 5910807716133696877}
+  playerInput: {fileID: 5910807717127898911}
+  playerHealth: {fileID: 7182422262902826801}
+  weaponParent: {fileID: 5910807716316538670}
+  animator: {fileID: 5910807716133696875}
 --- !u!1 &5910807716133696878
 GameObject:
   m_ObjectHideFlags: 0
@@ -373,10 +422,11 @@ GameObject:
   - component: {fileID: 5910807717127898883}
   - component: {fileID: 5910807717127898911}
   - component: {fileID: 5910807717127898880}
+  - component: {fileID: 7182422262902826801}
   - component: {fileID: 5910807717127898881}
   - component: {fileID: 5910807717127898882}
   m_Layer: 0
-  m_Name: PotatoPlayer
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -398,6 +448,7 @@ Transform:
   - {fileID: 5910807716135260760}
   - {fileID: 5910807716316538669}
   - {fileID: 5910807717228959218}
+  - {fileID: 7872762115027950702}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -432,6 +483,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spriteHolder: {fileID: 5910807716133696878}
   player_RB: {fileID: 5910807717127898881}
+--- !u!114 &7182422262902826801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5910807717127898884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ba51ddc1e3b0034b937b3c4bed71048, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxPlayerHealthPoints: 100
+  currentPlayerHealthPoints: 0
 --- !u!50 &5910807717127898881
 Rigidbody2D:
   serializedVersion: 4

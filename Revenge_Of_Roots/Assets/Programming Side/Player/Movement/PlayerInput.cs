@@ -30,5 +30,9 @@ namespace ROR.Player.Movement
             Vector2 playerMove = new Vector2(horizontalMove, verticalMove);
             movementController.MovePlayer(playerMove * Time.fixedDeltaTime, moveSpeed);
         }
+
+        public void SetMoveSpeed(float newMoveSpeed) { moveSpeed = newMoveSpeed; }
+        public float GetMoveSpeed() { return moveSpeed; }
+        
     }
 }

@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using NaughtyAttributes;
@@ -18,6 +17,7 @@ namespace ROR.Player
         
         private enum GAME_STATE 
         { 
+            Menu,
             FreshLoad,
             SaveLoad,
             Play,
