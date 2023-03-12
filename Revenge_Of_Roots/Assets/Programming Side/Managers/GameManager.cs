@@ -40,7 +40,8 @@ namespace ROR.Player
         }
 
         public void newLevelSelected (string selectedScene) { levelSelected = selectedScene; }
-        public void newCharacterSelected (BaseCharacter character) { selectedCharacter = character; }
         public string getLevelSelected () { return levelSelected; }
+        public void newCharacterSelected (BaseCharacter character) { selectedCharacter = character; }
+        public BaseCharacter getCharacterSelected () { return selectedCharacter; }
     }
 }

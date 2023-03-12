@@ -1535,7 +1535,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06bc7f9c87294b74ab6dedd799b5b3bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelSelectMenuSceneName: 3-StageSelect
+  levelSelectMenuSceneName: 2-StageSelect
   selectButtonManager: {fileID: 1601165020}
 --- !u!1 &1353576321
 GameObject:
@@ -2138,7 +2138,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 4-CharacterSelect
+          m_StringArgument: 2-CharacterSelect
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &2135479156

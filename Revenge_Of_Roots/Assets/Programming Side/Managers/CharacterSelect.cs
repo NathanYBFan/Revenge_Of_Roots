@@ -6,13 +6,17 @@ public class CharacterSelect : MonoBehaviour
 {
         [SerializeField] private string nameOfCurrentScene;
         [SerializeField] private SelectButtonManager selectButtonManager;
-        public void SingleGameSceneLoad() {
-            SceneManager.LoadScene(GameManager._gameManager.getLevelSelected(), LoadSceneMode.Single);
+
+        public void Awake() {
+            selectButtonManager.disableAllOutlines();
+            if (GameManager._gameManager.getCharacterSelected() != null)
+                selectButtonManager.EnableConfirmButton();
+            else 
+                selectButtonManager.DisableConfirmButton();    
         }
 
-        public void AdditiveSceneLoad(string sceneToLoad) {
-            BackButtonPressed();
-            SceneManager.LoadScene(sceneToLoad, LoadSceneMode.Additive);
+        public void SingleGameSceneLoad() {
+            SceneManager.LoadScene(GameManager._gameManager.getLevelSelected(), LoadSceneMode.Single);
         }
 
         public void CharacterButtonPressed(BaseCharacter character) {
@@ -21,7 +25,8 @@ public class CharacterSelect : MonoBehaviour
             selectButtonManager.EnableConfirmButton();
         }
 
-        public void BackButtonPressed() {
+        public void BackButtonPressed(string prevScene) {
+            SceneManager.LoadScene(prevScene, LoadSceneMode.Additive);
             SceneManager.UnloadSceneAsync(nameOfCurrentScene);
         }
 
