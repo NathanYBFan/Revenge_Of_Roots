@@ -421,7 +421,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5910807717127898883}
   - component: {fileID: 5910807717127898911}
-  - component: {fileID: 5910807717127898880}
+  - component: {fileID: 9124156119145030284}
   - component: {fileID: 7182422262902826801}
   - component: {fileID: 5910807717127898881}
   - component: {fileID: 5910807717127898882}
@@ -468,8 +468,8 @@ MonoBehaviour:
   anim: {fileID: 5910807716133696875}
   firePoint: {fileID: 5910807716316538669}
   moveSpeed: 5
-  movementController: {fileID: 5910807717127898880}
---- !u!114 &5910807717127898880
+  movementController: {fileID: 9124156119145030284}
+--- !u!114 &9124156119145030284
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -478,7 +478,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5910807717127898884}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45bc5f2079b2c5c4cb89afd78554c702, type: 3}
+  m_Script: {fileID: 11500000, guid: fbf05952cf129a342a7dbdd9a782a890, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   spriteHolder: {fileID: 5910807716133696878}

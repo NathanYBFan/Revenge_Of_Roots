@@ -1,4 +1,4 @@
-namespace ROR.Player
+namespace ROR.Enums
 {
     public enum FACING_DIRECTION
     {

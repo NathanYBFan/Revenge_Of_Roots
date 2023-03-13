@@ -1,14 +1,19 @@
 using UnityEngine;
 using NaughtyAttributes;
-namespace ROR.Player.Movement
+using ROR.Enums;
+
+namespace ROR
 {
-    public class PlayerMovement : MonoBehaviour
+    public class EntityMovement : MonoBehaviour
     {
+        // [SerializeField] private GameObject target;
+        // [SerializeField] private float moveSpeed;
+
         [SerializeField, Required, Foldout("Player Initializations")] private GameObject spriteHolder;
         [SerializeField, Required, Foldout("Player Initializations")] private Rigidbody2D player_RB;
         private FACING_DIRECTION player_FacingRight;
-
-        public void MovePlayer(Vector2 move, float moveSpeed)
+        
+        public void MoveEntity(Vector2 move, float moveSpeed)
         {
             // Move the character by finding the target velocity
             Vector3 targetVelocity = move * 100f;
@@ -26,4 +31,3 @@ namespace ROR.Player.Movement
         }
     }
 }
-

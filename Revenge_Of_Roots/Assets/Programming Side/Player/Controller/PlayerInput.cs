@@ -5,11 +5,11 @@ namespace ROR.Player.Movement
     public class PlayerInput : MonoBehaviour
     {
         [SerializeField, Foldout("Player Initializations")] private SpriteRenderer playerSprite;
-        [SerializeField, Foldout("Player Initializations")] private Animator anim;
+        [SerializeField, Foldout("Player Initializations")] private Animator animator;
         [SerializeField, Foldout("Player Initializations")] private Transform firePoint;
 
         [SerializeField, Foldout("Player Movement Specs")] private float moveSpeed = 1f;
-        [SerializeField, Foldout("Player Movement Specs")] private PlayerMovement movementController;
+        [SerializeField, Foldout("Player Movement Specs")] private EntityMovement movementController;
         private float horizontalMove, verticalMove;
 
         public void SlowPlayerMoveSpeed()
@@ -28,7 +28,7 @@ namespace ROR.Player.Movement
         private void FixedUpdate()
         {
             Vector2 playerMove = new Vector2(horizontalMove, verticalMove);
-            movementController.MovePlayer(playerMove * Time.fixedDeltaTime, moveSpeed);
+            movementController.MoveEntity(playerMove * Time.fixedDeltaTime, moveSpeed);
         }
 
         public void SetMoveSpeed(float newMoveSpeed) { moveSpeed = newMoveSpeed; }
