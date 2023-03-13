@@ -6,11 +6,8 @@ namespace ROR
 {
     public class EntityMovement : MonoBehaviour
     {
-        // [SerializeField] private GameObject target;
-        // [SerializeField] private float moveSpeed;
-
-        [SerializeField, Required, Foldout("Player Initializations")] private GameObject spriteHolder;
-        [SerializeField, Required, Foldout("Player Initializations")] private Rigidbody2D player_RB;
+        [SerializeField, Required, Foldout("Entity Initializations")] private GameObject spriteHolder;
+        [SerializeField, Required, Foldout("Entity Initializations")] private Rigidbody2D player_RB;
         private FACING_DIRECTION player_FacingRight;
         
         public void MoveEntity(Vector2 move, float moveSpeed)

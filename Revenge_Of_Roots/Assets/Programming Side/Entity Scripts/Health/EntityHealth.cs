@@ -1,11 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using NaughtyAttributes;
 
-namespace ROR.Player
+namespace ROR.Entity
 {
-    public class PlayerHealth : MonoBehaviour
+    public class EntityHealth : MonoBehaviour
     {
         [SerializeField, ReadOnly] private int maxPlayerHealthPoints = 100;
         [SerializeField, ReadOnly] private int currentPlayerHealthPoints;

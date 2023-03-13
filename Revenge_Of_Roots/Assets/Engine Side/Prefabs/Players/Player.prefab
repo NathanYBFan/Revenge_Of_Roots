@@ -465,7 +465,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerSprite: {fileID: 5910807716133696877}
-  anim: {fileID: 5910807716133696875}
+  animator: {fileID: 5910807716133696875}
   firePoint: {fileID: 5910807716316538669}
   moveSpeed: 5
   movementController: {fileID: 9124156119145030284}

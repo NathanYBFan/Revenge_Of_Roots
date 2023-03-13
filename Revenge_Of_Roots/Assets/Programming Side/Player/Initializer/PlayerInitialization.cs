@@ -1,4 +1,5 @@
 using UnityEngine;
+using ROR.Entity;
 
 namespace ROR.Player.Movement
 {
@@ -6,7 +7,7 @@ namespace ROR.Player.Movement
     {
         [SerializeField] private SpriteRenderer playerImage;
         [SerializeField] private PlayerInput playerInput;
-        [SerializeField] private PlayerHealth playerHealth;
+        [SerializeField] private EntityHealth playerHealth;
         [SerializeField] private GameObject weaponParent;
         [SerializeField] private Animator animator;
         private BaseCharacter character;

@@ -1,10 +1,10 @@
 {
-    "name": "Player.Movement",
+    "name": "ROR.Enemy.Initializer",
     "rootNamespace": "",
     "references": [
         "GUID:776d03a35f1b52c4a9aed9f56d7b4229",
-        "GUID:265954ce38796a3439d886e54bc196cc",
-        "GUID:adf9956c7da98784f866ece81d6a449a"
+        "GUID:6b44191d68d6bea469016330b1edc3b1",
+        "GUID:3f34a24d383e4e94eb16817d37fcb8b8"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

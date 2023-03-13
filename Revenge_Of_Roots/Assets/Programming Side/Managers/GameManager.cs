@@ -12,7 +12,7 @@ namespace ROR.Player
         public BaseCharacter SelectedCharacter
         {
             get => selectedCharacter;
-            set { SelectedCharacter = value; }
+            set { selectedCharacter = value; }
         }
         
         private enum GAME_STATE 

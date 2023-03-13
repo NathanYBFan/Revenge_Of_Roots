@@ -1,9 +1,12 @@
 {
-    "name": "ROR.Movement",
+    "name": "ROR.Player.Initializer",
     "rootNamespace": "",
     "references": [
         "GUID:776d03a35f1b52c4a9aed9f56d7b4229",
-        "GUID:265954ce38796a3439d886e54bc196cc"
+        "GUID:da2e63e7b79a1a04da5568445f10cad5",
+        "GUID:3f34a24d383e4e94eb16817d37fcb8b8",
+        "GUID:dd0e0cb7026827649aa701531d7fffc2",
+        "GUID:64f7585cc1ad784438d617c9de58de05"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
