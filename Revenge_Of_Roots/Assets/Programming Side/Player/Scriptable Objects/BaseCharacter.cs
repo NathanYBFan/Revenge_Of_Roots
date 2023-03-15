@@ -6,7 +6,7 @@ namespace ROR.Player
     public class BaseCharacter : ScriptableObject
     {
         [SerializeField] public int characterID = 0;
-        [SerializeField] private string characterName = "Test01";
+        [SerializeField] private string characterName = "CharacterName_Ability_IDNumber";
         [SerializeField] private Sprite characterSprite;
         [SerializeField] private float moveSpeed = 5;
         [SerializeField] private int characterHP = 100;

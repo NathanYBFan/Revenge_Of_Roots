@@ -12,7 +12,7 @@ namespace ROR.Player.Movement
         [SerializeField] private Animator animator;
         private BaseCharacter character;
         
-        void Start()
+        void SetupPlayer()
         {
             character = GameManager._gameManager.getCharacterSelected();
             playerImage.sprite = character.CharacterSprite;

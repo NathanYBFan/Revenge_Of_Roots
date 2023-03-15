@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using NaughtyAttributes;
+
 namespace ROR.Player
 {
     public class GameManager : MonoBehaviour
