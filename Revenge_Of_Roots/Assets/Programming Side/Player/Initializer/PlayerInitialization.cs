@@ -17,8 +17,8 @@ namespace ROR.Player.Movement
             character = GameManager._gameManager.getCharacterSelected();
             playerImage.sprite = character.CharacterSprite;
             playerInput.SetMoveSpeed(character.MoveSpeed);
-            playerHealth.SetPlayerMaxHP(character.CharacterHP);
-            playerHealth.ResetPlayerHP();
+            playerHealth.SetEntityMaxHP(character.CharacterHP);
+            playerHealth.ResetEntityHP();
             // Instantiate weapon
             animator.runtimeAnimatorController = character.CharacterAnimator;
 
