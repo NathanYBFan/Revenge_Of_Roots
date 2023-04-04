@@ -1,5 +1,7 @@
 using UnityEngine;
 using NaughtyAttributes;
+using ROR.Entity;
+
 namespace ROR.Player.Movement
 {
     public class PlayerInput : MonoBehaviour
@@ -10,8 +12,13 @@ namespace ROR.Player.Movement
 
         [SerializeField, Foldout("Player Movement Specs")] private float moveSpeed = 1f;
         [SerializeField, Foldout("Player Movement Specs")] private EntityMovement movementController;
+        
+        [SerializeField, Foldout("Player Attack Specs")] private float attackSpeed = 1f;
+        [SerializeField, Foldout("Player Attack Specs")] private EntityAttack attackController;
+        
         private float horizontalMove, verticalMove;
-
+        private bool isDead;
+        
         public void SlowPlayerMoveSpeed()
         {
             moveSpeed /= 1.5f;
@@ -23,6 +30,9 @@ namespace ROR.Player.Movement
         {
             horizontalMove = Input.GetAxisRaw("Horizontal");
             verticalMove = Input.GetAxisRaw("Vertical");
+
+            if (Input.GetKeyDown(KeyCode.Mouse1))
+                attackController.Attack();
         }
 
         private void FixedUpdate()
@@ -33,6 +43,10 @@ namespace ROR.Player.Movement
 
         public void SetMoveSpeed(float newMoveSpeed) { moveSpeed = newMoveSpeed; }
         public float GetMoveSpeed() { return moveSpeed; }
-        
+
+        public void SetAttackSpeed(float newAttackSpeed) { attackSpeed = newAttackSpeed;}
+        public float GetAttackSpeed() { return attackSpeed; }
+        public void SetIsDead(bool newIsDead) { isDead = newIsDead; }
+        public bool GetIsDead() { return isDead; }
     }
 }
